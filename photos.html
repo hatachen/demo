@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="vi">
+<title>PHOTOS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ body {font-family: 'Roboto', sans-serif;}
+ a {text-decoration: none;}
+.mySlides {display: none}
+img {vertical-align: middle}
+.active {
+    background-color: #e41308;
+    color: white;
+    opacity: 0.6;
+      }
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;border-radius: 0 3px 3px 0;
+
+  user-select: none;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a yellow background color with a little bit see-through */
+.prev:hover, .next:hover {
+
+  background-color: yellow;
+  opacity:0.3;
+
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  background-color: white;
+  opacity: 0.5;
+  
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #e41308;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #e41308;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+
+<!-- Header -->
+<header class="w3-display-container w3-center w3-content w3-hide-small" style="max-width:1500px">
+ <h1><a href="index.html"> <img src="img/banner.jpg"alt="Tạp chí QUY NGUYÊN" style="margin-left:0px; margin-top: 46px; width:80%"></a></h1>
+  
+</header>
+
+
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-yellow w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="news.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
+    <a href="lessons.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BÀI HỌC</a>
+    <a href="photos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small active">PHOTOS</a>
+    <a href="videos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEOS</a>
+    <a href="https://voviology.wixsite.com/newsletter/tap-chi-quy-nguyen" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOWNLOAD</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">GÓC THƯ GIÃN <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="relax.html#smile" class="w3-bar-item w3-button">CƯỜI TRONG ĐẠO</a>
+        <a href="relax.html#poem" class="w3-bar-item w3-button">VƯỜN THƠ</a>
+        <a href="relax.html#stories" class="w3-bar-item w3-button">TRUYỆN NGẮN</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right">
+    
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </a>
+  </div>
+
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-opacity w3-black w3-hide w3-hide-large w3-hide-medium w3-top w3-text-yellow" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-home"> HOME</i></a>
+  <a href="news.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-newspaper-o"> NEWS</i></a>
+  <a href="lessons.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-book"> BÀI HỌC </i></a>
+  <a href="photos.html" class="w3-bar-item w3-button w3-padding-large active" onclick="myFunction()"> <i class="fa fa-picture-o"> PHOTOS </i></a>
+  <a href="videos.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-video-camera"> VIDEOS </i></a>
+  <a href="https://voviology.wixsite.com/newsletter/tap-chi-quy-nguyen" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-download"> DOWNLOAD </i></a>
+
+  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-address-book"> CONTACT </i></a>
+  <a href="relax.html#smile" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-smile-o"> CƯỜI TRONG ĐẠO </i></a>
+  <a href="relax.html#poem" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-pencil"> VƯỜN THƠ </i></a>
+  <a href="relax.html#stories" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-bookmark-o"> TRUYỆN NGẮN </i> </a>
+     
+   
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Photo Slideshow -->
+  <div class="w3-container w3-margin-top">
+    <hr>
+    <h3><strong>PHOTO SLIDESHOW</strong></h3>
+    <div class="w3-round-xlarge w3-yellow w3-opacity" style="height:14px;width:25%"></div>
+    <h5 class="w3-center"><strong> Tet at Voviology City 2019</strong></h5>
+  </div>
+  <div class="w3-row-padding w3-text-white w3-large w3-center">
+    <div class="w3-center w3-margin-bottom">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 10</div>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51368214_2529500857066154_4693766176348569600_o.jpg?_nc_cat=101&_nc_ht=scontent-lga3-1.xx&oh=ac0ecdc8c604afe4172a84a1be92e44f&oe=5CDBD48F" style="width:100%">
+          <div class="text">Đạo Viện Vô Vi Quy Nguyên</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 10</div>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51685765_2529501457066094_2788060329228107776_o.jpg?_nc_cat=104&_nc_ht=scontent-lga3-1.xx&oh=3b4578c9ac481cb9a425688b0c6d4e12&oe=5D2326AA" style="width:100%" >
+          <div class="text">Phẩm Sắc Đài</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 10</div>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51442636_2529498903733016_6793442745240256512_o.jpg?_nc_cat=108&_nc_ht=scontent-lga3-1.xx&oh=65d74ebf343c28b210400bcc90434640&oe=5CEE57F1" style="width:100%" >
+          <div class="text">Pháp Chủ Thiền Viện</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 10</div>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51391235_2529499143732992_9119307569137975296_o.jpg?_nc_cat=100&_nc_ht=scontent-lga3-1.xx&oh=8c08b87c3542818f5c052f1394f8ad56&oe=5D2627F4" style="width:100%">
+          <div class="text">Hành lễ đầu năm</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 10</div>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51499394_2529496423733264_5704958441701769216_o.jpg?_nc_cat=110&_nc_ht=scontent-lga3-1.xx&oh=02f29f920d8f6d902e5c19cb882b19bd&oe=5CDA74A3" style="width:100%">
+          <div class="text">Center 3 - The Educational Zone
+          </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 10</div>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51617021_2529497343733172_654637192974434304_o.jpg?_nc_cat=106&_nc_ht=scontent-lga3-1.xx&oh=415a9cf61d09a89a0e227966daa921cb&oe=5CEA537E" style="width:100%">
+          <div class="text">Voviology City 2019
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 10</div>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51918255_2529497067066533_5402833494160179200_o.jpg?_nc_cat=103&_nc_ht=scontent-lga3-1.xx&oh=a11deec3bf07f3412ec861e4ea805b50&oe=5D213697" style="width:100%">
+          <div class="text">Tết 2019</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 10</div>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51464828_2529500897066150_4458266492374351872_o.jpg?_nc_cat=105&_nc_ht=scontent-lga3-1.xx&oh=3da0a7f0df563af6d25eb59655e18784&oe=5CF1CEA9" style="width:100%">
+          <div class="text">Tết 2019</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 10</div>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51599099_2529497123733194_6711725945847283712_o.jpg?_nc_cat=110&_nc_ht=scontent-lga3-1.xx&oh=87f957c8025a6f0e553ea7aedd9c1770&oe=5CE1BC79" style="width:100%">
+          <div class="text">Pháp Chủ Thiền Viện</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 10</div>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51286878_2529500443732862_2857830260475428864_o.jpg?_nc_cat=109&_nc_ht=scontent-lga3-1.xx&oh=69daf3eb7ed02b452843ff69f4c95df9&oe=5CE414E4" style="width:100%">
+          <div class="text">Pháp Chủ Thiền Viện</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+          <span class="dot" onclick="currentSlide(7)"></span> 
+          <span class="dot" onclick="currentSlide(8)"></span> 
+          <span class="dot" onclick="currentSlide(9)"></span> 
+          <span class="dot" onclick="currentSlide(10)"></span> 
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Photos -->
+    <div class="w3-container w3-margin-top">
+   
+    <h3><strong>ẢNH SINH HOẠT</strong></h3>
+    <div class="w3-round-xlarge w3-yellow w3-opacity" style="height:14px;width:25%"></div>
+             <hr>    
+      <div class="w3-row-padding w3-text-white w3-large">
+          <div class="w3-button w3-half w3-margin-bottom">
+            <div class="w3-display-container">
+              <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/48090137_2436996256316615_1971271580910616576_o.jpg?_nc_cat=109&_nc_ht=scontent-lga3-1.xx&oh=230f1c6a83ebfeb76f2f215e794f5f4d&oe=5D20D5A7" style="width:100%" onclick="onClick(this)" alt="Cảnh sinh hoạt tại ĐHLĐ tháng 11, 2018">
+              <span class="w3-display-bottomleft w3-padding">Voviology City, 11/2018</span>
+            </div>
+
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-button w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/44440833_2362346120448296_1181347801489997824_o.jpg?_nc_cat=100&_nc_ht=scontent-lga3-1.xx&oh=439fde67f40d2e5c8940b47726090e48&oe=5CE5E962" style="width:100%" onclick="onClick(this)" alt="Hình ảnh sinh hoạt tháng 10/2018">
+            <span class="w3-display-bottomleft w3-padding">Voviology City, 10/2018 </span>
+          </div>
+        </div>
+        <div class="w3-button w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/31727785_2107625905920320_8763558967063347200_o.jpg?_nc_cat=110&_nc_ht=scontent-lga3-1.xx&oh=d13444b64a4a80f632f7c322b247988f&oe=5D215110" style="width:100%" onclick="onClick(this)" alt="Ảnh sinh hoạt tại ĐHLĐ, tháng 8/2018">
+            <span class="w3-display-bottomleft w3-padding">Voviology City, 8/2018</span>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-button w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/28954170_2061841357165442_268157819843158354_o.jpg?_nc_cat=101&_nc_ht=scontent-lga3-1.xx&oh=ededfe992d246dc0ff20398d488ddc6e&oe=5D1E7233" style="width:100%" onclick="onClick(this)" alt="Ảnh sinh hoạt, tháng 3/2018">
+            <span class="w3-display-bottomleft w3-padding">Voviology, 3/2018</span>
+          </div>
+        </div>
+        <div class="w3-button w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/31706506_2107626285920282_1654155277655605248_o.jpg?_nc_cat=100&_nc_ht=scontent-lga3-1.xx&oh=882920009a812e3527ceca38f69aacd8&oe=5CED4B01" style="width:100%" onclick="onClick(this)" alt="Phẩm Sắc Đài, Voviology City">
+            <span class="w3-display-bottomleft w3-padding">Phẩm Sắc Đài</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+        <div class="w3-center">
+      <p><button class="w3-button w3-padding-large w3-yellow-opacity w3-border"><a href="https://voviology.wixsite.com/newsletter/sinh-hoat"></b>XEM THƯ SINH HOẠT</b></a></button></p>
+        </div>
+  </div>
+  <!-- Explore Nature -->
+  <div class="w3-container">
+    <h3><strong>CHARITY ACTIVITIES</strong></h3>
+    <div class="w3-round-xlarge w3-yellow w3-opacity" style="height:14px;width:25%"></div>
+    <p></p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-button w3-half w3-margin-bottom">
+      <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/12491923_1238034899546096_9221471519075640677_o.jpg?_nc_cat=100&_nc_ht=scontent-lga3-1.xx&oh=6e3d67e24e11833094accd35faadadfb&oe=5D188E3A" style="width:100%" onclick="onClick(this)" alt="Charity in Orphan Center in Vietnam">
+      <div class="w3-container w3-white">
+        <h3>Charity in Orphan Center in Vietnam</h3>
+
+      </div>
+    </div>
+    <div class="w3-button w3-half w3-margin-bottom">
+      <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/12045510_1187119004637686_1689137081070684302_o.jpg?_nc_cat=107&_nc_ht=scontent-lga3-1.xx&oh=fe3fcdd4cddd8e4d4175c10943475228&oe=5CE721FA" style="width:100%" onclick="onClick(this)" alt="Charity work in Calais, France">
+      <div class="w3-container w3-white">
+        <h3>Charity work in Calais, France</h3>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Pagination -->
+  <br>
+  <br>
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src=" " class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-yellow-opacity">
+  <h1 style="color:black;opacity:1.0;"><strong>QUY NGUYÊN</strong></h1>
+  <h5 style="color:red;opacity:1.0;"><strong>TẠP CHÍ TRAO ĐỔI VÀ THÔNG TIN CỦA CÁC PHÁP HỮU VÔ VI QUY NGHIÊM</strong></h5>
+
+  <p style="color:black;opacity:1.0;"> <i class="fa fa-address-book fa-fw w3-margin-right w3-large w3-hover-opacity"></i>911 Aleah Ln., Tehachapi, CA 93561 </p>
+
+  <p style="color:black;opacity:1.0;"> <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-hover-opacity"></i>714-236-0282</p>
+  <p style="color:black;opacity:1.0;"><i class="fa fa-envelope-o fa-fw w3-margin-right w3-large w3-hover-opacity"></i>tapchiquynguyen@voviology.org </p>
+   <p class="w3-medium">Copyright by<a href="http://www.voviology.org/front/region_select.asp" target="_blank"> www.voviology.org</a></p>
+
+</footer>
+
+
+<!--Modal for full size images on click-->
+<script>
+
+  function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+// Slideshow
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</body>
+</html>

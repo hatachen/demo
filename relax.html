@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="Việt">
+<title>GÓC THƯ GIÃN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Roboto", sans-serif}
+a {text-decoration: none;}
+.mySlides {display: none}
+.active {
+    background-color: #e41308;
+    color: white;
+    opacity: 0.6;
+      }
+
+
+</style>
+
+<!-- Header -->
+<header class="w3-display-container w3-center w3-content w3-hide-small" style="max-width:1500px">
+ <h1><a href="index.html"> <img src="img/banner.jpg"alt="Tạp chí QUY NGUYÊN" style="margin-left:0px; margin-top: 46px; width:80%"></a></h1>
+  
+</header>
+
+
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-yellow w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="news.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
+    <a href="lessons.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BÀI HỌC</a>
+    <a href="photos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTOS</a>
+    <a href="videos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEOS</a>
+    <a href="https://voviology.wixsite.com/newsletter/tap-chi-quy-nguyen" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOWNLOAD</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button active" title="More">GÓC THƯ GIÃN <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="relax.html#smile" class="w3-bar-item w3-button">CƯỜI TRONG ĐẠO</a>
+        <a href="relax.html#poem" class="w3-bar-item w3-button">VƯỜN THƠ</a>
+        <a href="relax.html#stories" class="w3-bar-item w3-button">TRUYỆN NGẮN</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right">
+    
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </a>
+  </div>
+
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-opacity w3-black w3-hide w3-hide-large w3-hide-medium w3-top w3-text-yellow" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-home"> HOME</i></a>
+  <a href="news.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-newspaper-o"> NEWS</i></a>
+  <a href="lessons.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-book"> BÀI HỌC </i></a>
+  <a href="photos.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-picture-o"> PHOTOS </i></a>
+  <a href="videos.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-video-camera"> VIDEOS </i></a>
+  <a href="https://voviology.wixsite.com/newsletter/tap-chi-quy-nguyen" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-download"> DOWNLOAD </i></a>
+
+  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-address-book"> CONTACT </i></a>
+  <a href="relax.html#smile" class="w3-bar-item w3-button w3-padding-large active" onclick="myFunction()"> <i class="fa fa-smile-o"> CƯỜI TRONG ĐẠO </i></a>
+  <a href="relax.html#poem" class="w3-bar-item w3-button w3-padding-large active" onclick="myFunction()"> <i class="fa fa-pencil"> VƯỜN THƠ </i></a>
+  <a href="relax.html#stories" class="w3-bar-item w3-button w3-padding-large active" onclick="myFunction()"> <i class="fa fa-bookmark-o"> TRUYỆN NGẮN </i> </a>
+     
+   
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <a href="https://thanhnien.vn/van-hoa/khoet-nui-xay-chua-mot-cot-tren-dat-my-604359.html" target="blank"> <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51464828_2529500897066150_4458266492374351872_o.jpg?_nc_cat=105&_nc_ht=scontent-lga3-1.xx&oh=3da0a7f0df563af6d25eb59655e18784&oe=5CF1CEA9" style="width:100%"> </a>
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h2 style="color:red">Khoét núi xây chùa Một Cột trên đất Mỹ </h2></a>
+         
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <a href="https://thanhnien.vn/van-hoa/doi-vang-my-om-van-hoa-viet-27237.html" target="blank"> <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51685765_2529501457066094_2788060329228107776_o.jpg?_nc_cat=104&_nc_ht=scontent-lga3-1.xx&oh=3b4578c9ac481cb9a425688b0c6d4e12&oe=5D2326AA" style="width:100%"> </a>
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h2 style="color:red">Đồi Vàng Mỹ ôm văn hóa Việt </h2></a>
+      
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+      <a href="http://fr.nhandan.org.vn/_mobile_politique/_mobile_pays-natal/item/1772871-une-replique-de-la-pagode-au-pilier-unique-aux-etats-unis.html" target="blank"> 
+    <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51599099_2529497123733194_6711725945847283712_o.jpg?_nc_cat=110&_nc_ht=scontent-lga3-1.xx&oh=87f957c8025a6f0e553ea7aedd9c1770&oe=5CE1BC79" style="width:100%"> </a>
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h2 style="color:red">Une réplique de la pagode au pilier unique aux États-Unis </h2>
+        <p> 
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="smile">
+    <h2 class="w3-wide">CƯỜI TRONG ĐẠO</h2>
+    <p class="w3-opacity"><i>Tuyển chọn những mẫu chuyện vui trong các tạp chí Quy Nguyên</i></p>
+    <p class="w3-justify"></p>
+
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third w3-button" id="smile1">
+        <h5>Anh Em Tương Đồng</h5>
+        <img src="img/smile1.png" class="w3-round w3-margin-bottom" onclick="onClick(this)" alt="Anh Em Tương Đồng" style="width:90%">
+        <p> Trích trong TCQN số 337, tháng 9/2018 </p>
+      </div>
+      <div class="w3-third w3-button" id="smile2">
+        <h5>Máy Cắt Gạch</h5>
+        <img src="img/smile2.png" class="w3-round w3-margin-bottom" onclick="onClick(this)" alt="Máy Cắt Gạch, In trong TCQN số 337, tháng 9/2018" style="width:90%">
+        <p> Trích từ TCQN số 337, tháng 9/2018 </p>
+      </div>
+      <div class="w3-third w3-button" id="smile3">
+        <h5>Những câu trả lời gây té ngữa</h5>
+        <img src="img/smile3.png" class="w3-round" onclick="onClick(this)" alt="Những câu trả lời gây té ngữa, In trong TCQN số 336, tháng 5/2018" style="width:90%">
+        <p> Trích từ TCQN số 336, tháng 5/2018
+      </div>
+    </div>
+  </div>
+
+  <!-- The Poem Section -->
+  <div class="w3-yellow-opacity" id="poem">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1200px">
+      <h2 class="w3-wide w3-center w3-round-xlarge w3-red-opacity" >VƯỜN THƠ</h2>
+      <p class="w3-center" style="color:blue;"><i></i> Tuyển tập những bài thơ ngắn đăng trong Tạp chí Quy Nguyên</p><br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom w3-button" id="poem1">
+          <h5><strong> Thơ tặng Ngoại </strong></h5>
+          <img src="img/poem1.png" class="w3-round" onclick="onClick(this)" alt="Thơ tặng Ngoại, trích trong TCQN số 337, tháng 9/2018" style="width:90%">
+          <div class="w3-container w3-white">
+            <p class="w3-opacity">TCQN số 337, tháng 9/2018</p>
+           </div>
+        </div>
+        <div class="w3-third w3-margin-bottom w3-button" id="poem2">
+          <h5><strong> Thơ </strong></h5>
+          <img src="img/poem2.png" class="w3-round" onclick="onClick(this)" alt="Thơ, trích trong TCQN số 335, tháng 7/2018" style="width:90%">
+          <div class="w3-container w3-white">
+            <p class="w3-opacity">TCQN số 335, tháng 7/2018</p>
+           </div>
+        </div>
+        <div class="w3-third w3-margin-bottom w3-button" id="poem3">
+          <h5><strong> Thơ chúc Tết </strong></h5>
+          <img src="img/poem3.png" class="w3-round" onclick="onClick(this)" alt="Thơ chúc Tết, trích trong TCQN số 330, tháng 2/2018" style="width:90%">
+          <div class="w3-container w3-white">
+            <p class="w3-opacity">TCQN số 330, tháng 2/2018</p>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stories -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:1200px" id="stories">
+    <h2 class="w3-wide w3-center">CÂU CHUYỆN CỦA TÔI</h2>
+     <p class="w3-opacity w3-center"><i>Những mẫu chuyện được chia sẻ từ các pháp hữu VVQN</i></p>
+    <div class="w3-container w3-half w3-button" id="story1">
+           <h5><strong> Nghiệp Duyên </strong></h5>
+          <img src="img/story1.png" class="w3-round" onclick="onClick(this)" alt="Nghiệp Duyên, trích trong TCQN số 337, tháng 9/2018" style="width:100%">
+          <div class="w3-container w3-white">
+            <p class="w3-opacity">TCQN số 337, tháng 9/2018</p>
+           </div>
+   </div>
+
+   <div class="w3-container w3-half w3-button" id="story2">
+           <h5><strong> Duyên - Chìa khóa cho cách dùng người </strong></h5>
+          <img src="img/story2.png" class="w3-round" onclick="onClick(this)" alt="Duyên - Chìa khóa cho cách dùng người, trích trong TCQN số 337, tháng 9/2018" style="width:100%">
+          <div class="w3-container w3-white">
+            <p class="w3-opacity">TCQN số 337, tháng 9/2018</p>
+           </div>
+   </div>
+
+  </div>
+  
+
+    <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src=" " class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-yellow-opacity">
+  <h1 style="color:black;opacity:1.0;"><strong>QUY NGUYÊN</strong></h1>
+  <h5 style="color:red;opacity:1.0;"><strong>TẠP CHÍ TRAO ĐỔI VÀ THÔNG TIN CỦA CÁC PHÁP HỮU VÔ VI QUY NGHIÊM</strong></h5>
+
+  <p style="color:black;opacity:1.0;"> <i class="fa fa-address-book fa-fw w3-margin-right w3-large w3-hover-opacity"></i>911 Aleah Ln., Tehachapi, CA 93561 </p>
+
+  <p style="color:black;opacity:1.0;"> <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-hover-opacity"></i>714-236-0282</p>
+  <p style="color:black;opacity:1.0;"><i class="fa fa-envelope-o fa-fw w3-margin-right w3-large w3-hover-opacity"></i>tapchiquynguyen@voviology.org </p>
+   <p class="w3-medium">Copyright by<a href="http://www.voviology.org/front/region_select.asp" target="_blank"> www.voviology.org</a></p>
+
+</footer>
+
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+ function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+</body>
+</html>

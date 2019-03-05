@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="Việt">
+<title>LESSONS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Roboto", sans-serif}
+a {text-decoration: none;}
+.mySlides {display: none}
+
+.active {
+    background-color: #e41308;
+    color: white;
+    opacity: 0.6;
+      }
+.w3-col .l2 {
+  width:240px;
+  height: inherit;
+}
+
+
+
+</style>
+
+<!-- Header -->
+<header class="w3-display-container w3-center w3-content w3-hide-small" style="max-width:1500px">
+ <h1><a href="index.html"> <img src="img/banner.jpg"alt="Tạp chí QUY NGUYÊN" style="margin-left:0px; margin-top: 46px; width:80%"></a></h1>
+  
+</header>
+
+
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-yellow w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="news.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
+    <a href="lessons.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small active">BÀI HỌC</a>
+    <a href="photos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTOS</a>
+    <a href="videos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEOS</a>
+    <a href="https://voviology.wixsite.com/newsletter/tap-chi-quy-nguyen" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOWNLOAD</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">GÓC THƯ GIÃN <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="relax.html#smile" class="w3-bar-item w3-button">CƯỜI TRONG ĐẠO</a>
+        <a href="relax.html#poem" class="w3-bar-item w3-button">VƯỜN THƠ</a>
+        <a href="relax.html#stories" class="w3-bar-item w3-button">TRUYỆN NGẮN</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right">
+    
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </a>
+  </div>
+
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-opacity w3-black w3-hide w3-hide-large w3-hide-medium w3-top w3-text-yellow" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-home"> HOME</i></a>
+  <a href="news.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-newspaper-o"> NEWS</i></a>
+  <a href="lessons.html" class="w3-bar-item w3-button w3-padding-large active" onclick="myFunction()"><i class="fa fa-book"> BÀI HỌC </i></a>
+  <a href="photos.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-picture-o"> PHOTOS </i></a>
+  <a href="videos.html" class="w3-bar-item w3-button w3-padding-large " onclick="myFunction()"> <i class="fa fa-video-camera"> VIDEOS </i></a>
+  <a href="https://voviology.wixsite.com/newsletter/tap-chi-quy-nguyen" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-download"> DOWNLOAD </i></a>
+
+  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-address-book"> CONTACT </i></a>
+  <a href="relax.html#smile" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-smile-o"> CƯỜI TRONG ĐẠO </i></a>
+  <a href="relax.html#poem" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-pencil"> VƯỜN THƠ </i></a>
+  <a href="relax.html#stories" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-bookmark-o"> TRUYỆN NGẮN </i> </a>
+     
+   
+</div>
+
+<!-- Page content -->
+
+<!-- Highlighted videos -->
+<div class="w3-content w3-light-grey" style="max-width:1500px; margin-left:20px">
+  <div class="w3-row">
+    <div class="w3-threequarter">
+      <br>
+      <div class="w3-card-4 w3-margin w3-white">
+        <hr>
+            <h3><strong>BÀI HỌC</strong></h3>
+            <div class="w3-round-xlarge w3-yellow w3-opacity" style="height:14px;width:25%"></div>
+            <hr>
+
+         <div class="w3-twothird w3-center" id="learn29">
+           <a href="news338.html">
+           <img src="https://speedlink.vn/wp-content/uploads/2016/12/hinh-nen-tet-2017-voi-bo-suu-tap-hoa-co-mua-xuan-11.jpg" style="width:90%"></a> 
+           <div class="w3-container w3-white w3-center">
+           <a href="#"><h5><strong>Bài số 29: Cảm nghĩ trước thềm năm mới 1985</h5></strong></a></div>
+           <div class="w3-half" id="learn28"> 
+            <a href="#">
+           <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/33299655_2133528426663401_1197743637279014912_o.jpg?_nc_cat=106&_nc_ht=scontent-lga3-1.xx&oh=4575ce26de7bc9e518c99abc20629bad&oe=5D101737" style="width:90%"></a> 
+           <div class="w3-container w3-white w3-center">
+           <a href="#"><h5><strong>Bài số 28: Lời giảng Đức Ngài về Lễ Thọ Y</h5></strong></a></div>
+           </div>
+
+           <div class="w3-half w3-center" id="learn27"> 
+            <a href="#">
+           <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/28947689_2061843173831927_1347938346220613498_o.jpg?_nc_cat=109&_nc_ht=scontent-lga3-1.xx&oh=c5a84c3a902853b04e347398382848fb&oe=5CE36049" style="width:90%"></a> 
+           <div class="w3-container w3-white w3-center">
+           <a href="#"><h5><strong>Bài số 27: Lễ Cúng dường Chư Phật trong ngày Khánh Đản</h5></strong></a></div>
+           </div>
+         </div>
+
+
+
+
+        <div class="w3-third w3-container w3-center" id="learn26">
+            <a href="#">
+           <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/10359027_298002787032732_6274095505749215357_o.jpg?_nc_cat=101&_nc_ht=scontent-lga3-1.xx&oh=9ed4bd0fcd8ec5e27aac4835dfaf3988&oe=5CE46BDA" style="width:90%"></a> 
+           <div class="w3-container w3-white w3-center">
+           <a href="#"><h5><strong>Bài số 26: Hội Long Hoa</h5></strong></a>
+           <p> Đức Ngài giảng tại ngôi bác sĩ Nguyễn Tấn Lộc 26/2/1984</p></div>
+        </div>
+        <div class="w3-third w3-container w3-center" id="learn25">
+            <a href="#">
+           <img src="http://media.phapluatplus.vn/files/phantuyen/2019/02/24/02_zzbx-0823.jpg" style="width:90%"></a> 
+           <div class="w3-container w3-white w3-center">
+           <a href="#"><h5><strong>Bài số 25: Tánh Tâm và Tánh Tướng</h5></strong></a></div>
+        </div>
+        <div class="w3-third w3-container w3-center" id="learn24">
+            <a href="#">
+           <img src="https://cdn.baohatinh.vn/desktop/news/1704/106d3102521t4978l6.jpg" style="width:90%"></a> 
+           <div class="w3-container w3-white w3-center">
+           <a href="#"><h5><strong>Bài số 24: Đức Ngài giảng ngày mồng 6 Tết năm Giáp Tý 1984</h5></strong></a>
+           <p>Đức Ngài giảng tại nhà ông bà Lê Minh Chánh</p></div>
+        </div>
+        <hr>
+ 
+
+<!-- First Photo Grid-->
+
+  <div class="w3-row-padding w3-padding-16">
+    <br>
+            <h3><strong>LUẬT</strong></h3>
+            <div class="w3-round-xlarge w3-yellow w3-opacity" style="height:14px;width:25%"></div>
+            <hr>
+<br>
+    <div class="w3-quarter w3-center">
+
+            <a href="#">
+           <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51464828_2529500897066150_4458266492374351872_o.jpg?_nc_cat=105&_nc_ht=scontent-lga3-1.xx&oh=79bed7f7d4d0693395edf06c1c8efa08&oe=5D195BA9" style="width:100%"></a> 
+           <a href="#"><p><strong>Bổ túc Luật Hành đạo</strong></p></a>
+
+    </div>
+    <div class="w3-quarter w3-center">
+            <a href="#">
+           <img src="https://photo-2-baomoi.zadn.vn/w700_r1/17/09/29/144/23413249/1_23584.jpg" style="width:100%"></a> 
+           <a href="#"><p><strong>Chương 10: Khuynh hướng Thoái Chuyển Đạo</strong></p></a>
+    </div>
+    <div class="w3-quarter w3-center">
+            <a href="#">
+           <img src="http://thamtukl.vn/wp-content/uploads/2016/06/so-sanh-gia-thue-tham-tu-1.jpg" style="width:100%"></a> 
+           <a href="#"><p><strong>Chương 9: Khuynh hướng So Bì (so sánh và phân bì) của bản ngã</strong></p></a>
+    </div>
+    <div class="w3-quarter w3-center">
+            <a href="#">
+           <img src="https://static01.nyt.com/images/2009/02/16/health/17angi_600.jpg" style="width:100%"></a> 
+           <a href="#"><p><strong>Chương 8: Khuynh hướng ganh tị của bản ngã</strong></p></a>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter w3-center">
+            <a href="#">
+           <img src="https://lh3.ggpht.com/-64CAaDWbKAY/Uga7ImL9YOI/AAAAAAAAC74/1ZCytQwwACQ/s1600/IMG_9395.JPG" style="width:100%"></a> 
+           <a href="#"><p><strong>Chương 7: Khuynh hướng Si của bản ngã</strong></p></a>
+    </div>
+    <div class="w3-quarter w3-center">
+            <a href="#">
+           <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/05/06/10/angry-birds.jpg?w968h681" style="width:100%"></a> 
+           <a href="#"><p><strong>Chương 6: Khuynh hướng Sân của bản ngã</strong></p></a>
+    </div>
+    <div class="w3-quarter w3-center">
+            <a href="#">
+           <img src="https://lh4.googleusercontent.com/-xH5feGimiL4/Uqp2M006hJI/AAAAAAAAA2E/FS_aCqoRQwM/s640/blogger-image-633211931.jpg" style="width:100%"></a> 
+           <a href="#"><p><strong>Chương 5: Khuynh hướng Tham của bản ngã</strong></p></a>
+    </div>
+    <div class="w3-quarter w3-center">
+            <a href="#">
+           <img src="http://muslimgirl.com/wp-content/uploads/2017/06/LOVE-love-36983825-1680-1050.jpg" style="width:100%"></a> 
+           <a href="#"><p><strong>Chương 4: Khuynh hướng Tình Cảm của bản ngã</strong></p></a>
+    </div>
+    <div class="w3-contain w3-center">
+      <p><button class="w3-button w3-padding-large w3-yellow-opacity w3-border"><a href="https://voviology.wixsite.com/newsletter/bai-hoc"></b>XEM THÊM BÀI HỌC</b></a></button></p>
+    </div>
+  </div>
+
+
+
+    </div>
+    </div>
+  <!-- Links -->
+  <div class="w3-quarter w3-yellow-opacity">
+  
+
+    <!-- About Card -->
+    <div class="w3-card w3-margin w3-margin-top">
+      <hr>
+    
+     <h5 style="color:black;">  <i class="fa fa-quote-left"><strong> CHÂM NGÔN CUỐI TUẦN   </strong> </i>  <i class="fa fa-quote-right"></i></h5>
+    <div class="w3-content w3-padding-16" id="link1">
+    
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/43951714_1074665616033108_4126683326222172160_o.jpg?_nc_cat=106&_nc_ht=scontent-lga3-1.xx&oh=de67fa9c724adb31508b0bc772310b05&oe=5CDF6805" onclick="onClick(this)" alt="Sanh ra đời ở vị trí nào, dân tộc nào, thân phận nào, dầu không thích cũng phải làm tròn với vị trí đó. Đó là cách làm cho đời sống của mình không ngày càng bị sa lầm, lầm lỗi và thất bại. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white">
+        <quote><strong>"Sanh ra đời ở vị trí nào, dân tộc nào, thân phận nào, dầu không thích cũng phải làm tròn với vị trí đó. Đó là cách làm cho đời sống của mình không ngày càng bị sa lầm, lầm lỗi và thất bại"</strong> - Đức Thầy Từ Minh Đạt, 7/2013</quote>
+            </div>
+      </div>
+    <div class="w3-content w3-padding-16" id="link2">
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/42233018_1062440257255644_4749677167254700032_o.jpg?_nc_cat=102&_nc_ht=scontent-lga3-1.xx&oh=7ac722e5ab216abbc8b551435b7e03a4&oe=5CDE6180" onclick="onClick(this)" alt="Bóng và hình, tưởng là những hiện tượng vật thể không thể tách rời, nhưng nó sẽ không còn tồn tại khi vật thể ấy không đứng vào nơi có ánh sáng. Thân và đuôi, tưởng là những vật thể có sự liên kết chặt chẽ trong một thân thể, nhưng nó cũng không thể tồn tại khi vật thể ấy là con người nên không có đuôi. Keo và sơn, tưởng là sự gắn bó chặt chẽ, nhưng cũng có ngày tách rời bởi yếu tố thời gian. Chỉ có cái tâm là trường tồn. Thế nên, không cần sự thề thốt, không cần sự hạ quyết tâm chi, chỉ cần cái tâm là đủ!. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white ">
+        <quote><strong>"Bóng và hình, tưởng là những hiện tượng vật thể không thể tách rời, nhưng nó sẽ không còn tồn tại khi vật thể ấy không đứng vào nơi có ánh sáng. ....."</strong> - Đức Thầy Từ Minh Đạt, 5/2013</quote>
+            </div>
+    </div>
+    <div class="w3-content w3-padding-16" id="link3">
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/38292930_1023491691150501_3279805875274907648_o.jpg?_nc_cat=108&_nc_ht=scontent-lga3-1.xx&oh=b34f4975e6ffd43bf0cda99f0b662e24&oe=5D127B98" onclick="onClick(this)" alt="Khi bước chân vào một hệ thống có sẵn, một mạng lưới có sẵn, một tổ chức có sẵn, một quan hệ có sẵn, một ân oán có sẵn,… nói chung mọi oan nghiệt, duyên nghiệp, nhân quả,… đều đã có sẵn mà ta phải là người kế thừa; thì nên dựa vào tinh thần có được từ bản thân ta trở đi mà giải quyết sự việc. Đừng lấy cái ân oán cũ để cột vào mình dầu rằng bản thân ta đang đi vào, đang thừa hưởng, đang tiếp nối… những cái tồn đọng từ cái cũ. Đừng lấy cái oán của người thành oán của mình mà tiếp nối; đừng lấy cái nợ của người kể cả cái duyên của người thành chuỗi tiếp nối mà đẩy ta vào vòng cuốn hút cũ. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white">
+        <quote><strong>"Khi bước chân vào một hệ thống có sẵn, một mạng lưới có sẵn, một tổ chức có sẵn, một quan hệ có sẵn, một ân oán có sẵn,…"</strong> - Đức Thầy Từ Minh Đạt, 12/2011</quote>
+            </div>
+    </div>
+
+    <div class="w3-content w3-padding-16" id="link4">
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/36754142_994779970688340_4462496532649738240_o.jpg?_nc_cat=108&_nc_ht=scontent-lga3-1.xx&oh=a13b290191c450e1b325fda9368351e1&oe=5D0ED486" onclick="onClick(this)" alt="Sanh ra đời ở vị trí nào, dân tộc nào, thân phận nào, dầu không thích cũng phải làm tròn với vị trí đó. Đó là cách làm cho đời sống của mình không ngày càng bị sa lầm, lầm lỗi và thất bại. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white">
+        <quote><strong>"Chất rắn đánh vào chất rắn thì hai vật cũng đều nhận phản lực dội ngược. Nhưng chất rắn đánh vào không khí thì mọi thứ đều là không! Vì vậy, để hóa giải mọi áp lực thì phải biết biến thành không khí để mọi thứ đều hóa không! Tâm yên lại, dửng dưng không manh động"</strong> - Đức Thầy Từ Minh Đạt, 12/2012</quote>
+            </div>
+    </div>
+
+    <div class="w3-content w3-padding-16" id="link5">
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/29351715_930607123772292_7352461449674781104_o.jpg?_nc_cat=104&_nc_ht=scontent-lga3-1.xx&oh=5a4dbbd466c2d33abb95569ea9947663&oe=5D2392A7" onclick="onClick(this)" alt="Làm việc gì, nghĩ việc gì đều phải có cái giá của nó; kể cả làm việc tốt, nghĩ việc tốt; làm việc tầm thường, nghĩ việc tầm thường. Thậm chí làm việc và nghĩ việc rất là cá nhân và nhỏ bé như ăn, uống thì cũng phải có cái giá để trả. Cái giá đó tự bản thân người hành, người nghĩ phải trả. Không một ai, dầu thân thuộc, yêu thương cỡ nào cũng không thể trả giùm được.. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white">
+        <quote><strong>"Làm việc gì, nghĩ việc gì đều phải có cái giá của nó; kể cả làm việc tốt, nghĩ việc tốt; làm việc tầm thường, nghĩ việc tầm thường...."</strong> - Đức Thầy Từ Minh Đạt, 10/2011</quote>
+            </div>
+    </div>
+
+    <div class="w3-content w3-padding-16" id="link6">
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/29027399_920343438131994_1361563413754413056_o.jpg?_nc_cat=101&_nc_ht=scontent-lga3-1.xx&oh=e4d0364ad0083fe26fc7e93d41a97cff&oe=5D0DF892" onclick="onClick(this)" alt="Giàu nghèo đều có phần số. Hãy truyền nhận thức nầy cho mọi người thấy rằng: “Cần biết cách sống trước khi có của cải vật chất”. Nếu có của cải, ta sẽ biết cách dùng của cải đúng đắn, nếu thế thời bắt phải đói nghèo thì ta sẽ biết cách sống hạnh phúc và vươn lên trong cảnh đói nghèo. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white">
+        <quote><strong>"Giàu nghèo đều có phần số”. Hãy truyền nhận thức nầy cho mọi người thấy rằng: “Cần biết cách sống trước khi có của cải vật chất”. Nếu có của cải, ta sẽ biết cách dùng của cải đúng đắn, nếu thế thời bắt phải đói nghèo thì ta sẽ biết cách sống hạnh phúc và vươn lên trong cảnh đói nghèo."</strong> - Đức Thầy Từ Minh Đạt, 5/2008</quote>
+            </div>
+    </div>
+
+    </div><hr>
+
+
+
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+  
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+</div>
+
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src=" " class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-yellow-opacity">
+  <h1 style="color:black;opacity:1.0;"><strong>QUY NGUYÊN</strong></h1>
+  <h5 style="color:red;opacity:1.0;"><strong>TẠP CHÍ TRAO ĐỔI VÀ THÔNG TIN CỦA CÁC PHÁP HỮU VÔ VI QUY NGHIÊM</strong></h5>
+
+  <p style="color:black;opacity:1.0;"> <i class="fa fa-address-book fa-fw w3-margin-right w3-large w3-hover-opacity"></i>911 Aleah Ln., Tehachapi, CA 93561 </p>
+
+  <p style="color:black;opacity:1.0;"> <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-hover-opacity"></i>714-236-0282</p>
+  <p style="color:black;opacity:1.0;"><i class="fa fa-envelope-o fa-fw w3-margin-right w3-large w3-hover-opacity"></i>tapchiquynguyen@voviology.org </p>
+   <p class="w3-medium">Copyright by<a href="http://www.voviology.org/front/region_select.asp" target="_blank"> www.voviology.org</a></p>
+
+</footer>
+
+
+
+<script>
+
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+  function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+</script>
+
+</body>
+</html>
