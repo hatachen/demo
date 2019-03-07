@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="Việt">
+<title>LESSONS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Roboto", sans-serif}
+a {text-decoration: none;}
+.mySlides {display: none}
+
+.active {
+    background-color: #e41308;
+    color: white;
+    opacity: 0.6;
+      }
+.w3-col .l2 {
+  width:240px;
+  height: inherit;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+</style>
+
+<!-- Header -->
+<header class="w3-display-container w3-center w3-content w3-hide-small" style="max-width:1500px">
+ <h1><a href="index.html"> <img src="img/banner.jpg"alt="Tạp chí QUY NGUYÊN" style="margin-left:0px; margin-top: 46px; width:80%"></a></h1>
+  
+</header>
+
+
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-yellow w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="news.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
+    <a href="lessons.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small active">BÀI HỌC</a>
+    <a href="photos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTOS</a>
+    <a href="videos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEOS</a>
+    <a href="https://voviology.wixsite.com/newsletter/tap-chi-quy-nguyen" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOWNLOAD</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">GÓC THƯ GIÃN <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="relax.html#smile" class="w3-bar-item w3-button">CƯỜI TRONG ĐẠO</a>
+        <a href="relax.html#poem" class="w3-bar-item w3-button">VƯỜN THƠ</a>
+        <a href="relax.html#stories" class="w3-bar-item w3-button">TRUYỆN NGẮN</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right">
+    
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </a>
+  </div>
+
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-opacity w3-black w3-hide w3-hide-large w3-hide-medium w3-top w3-text-yellow" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-home"> HOME</i></a>
+  <a href="news.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-newspaper-o"> NEWS</i></a>
+  <a href="lessons.html" class="w3-bar-item w3-button w3-padding-large active" onclick="myFunction()"><i class="fa fa-book"> BÀI HỌC </i></a>
+  <a href="photos.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-picture-o"> PHOTOS </i></a>
+  <a href="videos.html" class="w3-bar-item w3-button w3-padding-large " onclick="myFunction()"> <i class="fa fa-video-camera"> VIDEOS </i></a>
+  <a href="https://voviology.wixsite.com/newsletter/tap-chi-quy-nguyen" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-download"> DOWNLOAD </i></a>
+
+  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-address-book"> CONTACT </i></a>
+  <a href="relax.html#smile" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-smile-o"> CƯỜI TRONG ĐẠO </i></a>
+  <a href="relax.html#poem" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-pencil"> VƯỜN THƠ </i></a>
+  <a href="relax.html#stories" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> <i class="fa fa-bookmark-o"> TRUYỆN NGẮN </i> </a>
+     
+   
+</div>
+
+<!-- Page content -->
+
+ 
+  <div class="w3-content w3-padding-16 " style="max-width:1200px">
+    <div class="w3-threequarter w3-light-grey">
+    <br>
+    <h1 class="w3-center"><strong>Tình yêu - Đạo lý của Tự nhiên</strong></h1>
+    <p class="w3-center"><cite>(Trích Tiểu Luận Tạp Chí Quy Nguyên ngày 15 tháng 11 năm 2006)</cite></p> 
+    <br>
+
+    <p>Nhiều khi con người nhỏ giọt nước mắt cho nhau cũng bởi vì họ, họ chua xót, đau khổ cho chính họ mà nhiều người thường lầm tưởng đó là những giọt nước mắt của họ dành cho người. </p>
+    <p>Chứng kiến kẻ thân, người yêu qua đời,... rồi con người khóc. Nhiều người cho đó là sự đau lòng vì người quá cố. Có thật vậy không? Hay vì họ không cho, họ không còn thấy được hình ảnh của người qua đời, không còn nghe giọng nói thân quen, không còn được gọi tên, không còn những điệp khúc thường hay diễn ra trong sinh hoạt hằng ngày...? Hỏi thì cũng như trả lời, vì tình người thật sự có nhiều giới hạn, cũng bởi họ đã quen "cân", "đo", "đong", "đếm" với mọi thứ tình.</p>
+    <p>Con người của thời đại ngày nay cần phải học lại về tình thương, tình yêu đúng nghĩa. Cái tình này cần phải học, không phải để tìm ra những hương vị mới mẻ mà tìm lại chính mình, tìm lại những gì mình đã từng có.</p>
+   
+    <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/39453670_1038861829613487_7492424831300796416_o.jpg?_nc_cat=106&_nc_ht=scontent-lga3-1.xx&oh=65c68bbb2f2773a5eeb06a52f3780345&oe=5D15D7AB" class="center" style="width:90%">
+    <p class="w3-center"><cite>Ảnh minh họa - by Phuong Nguyen</cite></p>
+ 
+    <p> Tình yêu có nghĩa là tình cho, cho người tất cả hương vị đậm đà của tình người, của lòng người.</p>
+   
+    <p> • Trong tình yêu không có tình buồn, vì chỉ cho chứ nhận đâu mà buồn.</p>
+    <p> • Trong tình yêu không có tình ghen, vì cho người chứ nào đòi về ta?</p>
+    <p> • Trong tình yêu không có tình hận và trong tình yêu không có tình câm vì ta hòa đồng với người và vật. Mọi giải bày chính là sự hòa đồng.</p>
+    <p> Khi con người có được tình yêu thật sự thì con người sẽ gắn bó với nhau hơn, mà con người mới hiểu được tình yêu của Thượng Đế, của Thiên Liêng dành cho chúng sanh, của Thầy dành cho trò, của Cha Mẹ dành cho con cái và của người tình dành cho nhau.</p>
+    <p> Tưởng được đắm chìm trong biển tình, vui sướng cho một xã hội đạo đức và tình người mà bên cạnh những tình yêu hiện hữu luôn khiến con người phải phân vân:</p>
+    <p> • Tôn giáo có thật sự hiện hữu và giúp đời hay không?</p>
+    <p> • Liệu chăng có phải là thầy bà lợi dụng thiên hạ?</p>
+    <p> • Cha mẹ đâu có xem mình là con?</p>
+    <p> • Anh ấy có bắt cá hai tay không?</p>
+    <p>... Tất cả những nghi vấn đó hiển hiện có nghĩa là con người vẫn chưa gặp nhau bởi tình yêu thật sự, xã hội vẫn chưa định ra được cái mực thước đạo đức thật sự dù rằng chung quanh có hàng vạn ngôi chùa, nhà thờ, nhà trường, được mọc lên,...</p>
+    <p> Xã hội hãy thử tiếp nhận sự đào tạo từ học viện Vô Vi Quy Nguyên chỉ trong một thế hệ để xem thử xã hội gặt hái những gì khi được dạy về tình thương mà mình từng đánh mất.</p>
+
+    <p class="w3-right"><cite> Đức Thầy TỪ MINH ĐẠT (TS Châu Nhật Tân)</cite></p>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Xem thêm-->
+
+    <h3 class="w3-center"><strong>Tiểu luận khác </strong></h3>
+
+    <div class="w3-quarter w3-center">
+
+            <a href="bienminhvathucchat.html">
+           <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/45302287_1088955294604140_9124764028734799872_o.jpg?_nc_cat=104&_nc_ht=scontent-lga3-1.xx&oh=ad71523a163e40831b5a4beb57ec819b&oe=5D29124F" style="width:95%"></a> </div>
+
+    <div class="w3-quarter">
+           <a href="bienminhvathucchat.html"><h5><strong>Biện minh và Thực chất </strong></h5></a>
+           <p> Người ta quen sống và trưởng thành cùng lúc với cái TA của mình, nên chuyện gì con người cũng nghĩ ....</p>
+
+    </div>
+
+      <div class="w3-quarter w3-center">
+
+            <a href="lytuongdoi.html">
+           <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/42727772_1066477386851931_8470964504706940928_o.jpg?_nc_cat=106&_nc_ht=scontent-lga3-1.xx&oh=ba2f23f85b07192b241c7cf4d718351e&oe=5D1BAEED" style="width:95%"></a> </div>
+
+         <div class="w3-quarter">  
+           <a href="lytuongdoi.html"><h5><strong>Lý Tương đối</strong></h5></a>
+           <p>Tương đối khác với ba phải, “sao cũng được” mà là sự có chủ kiến, có lập trường nhưng không thái quá..</p>
+
+    </div>
+  </div>
+
+    </div>
+   
+
+
+
+
+
+  <!-- Links -->
+  <div class="w3-quarter w3-yellow-opacity">
+  
+
+    <!-- About Card -->
+    <div class="w3-card w3-margin w3-margin-top">
+      <hr>
+    
+     <h5 style="color:black;">  <i class="fa fa-quote-left"><strong> CHÂM NGÔN CUỐI TUẦN   </strong> </i>  <i class="fa fa-quote-right"></i></h5>
+    <div class="w3-content w3-padding-16" id="link1">
+    
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/43951714_1074665616033108_4126683326222172160_o.jpg?_nc_cat=106&_nc_ht=scontent-lga3-1.xx&oh=de67fa9c724adb31508b0bc772310b05&oe=5CDF6805" onclick="onClick(this)" alt="Sanh ra đời ở vị trí nào, dân tộc nào, thân phận nào, dầu không thích cũng phải làm tròn với vị trí đó. Đó là cách làm cho đời sống của mình không ngày càng bị sa lầm, lầm lỗi và thất bại. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white">
+        <quote><strong>"Sanh ra đời ở vị trí nào, dân tộc nào, thân phận nào, dầu không thích cũng phải làm tròn với vị trí đó. Đó là cách làm cho đời sống của mình không ngày càng bị sa lầm, lầm lỗi và thất bại"</strong> - Đức Thầy Từ Minh Đạt, 7/2013</quote>
+            </div>
+      </div>
+    <div class="w3-content w3-padding-16" id="link2">
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/42233018_1062440257255644_4749677167254700032_o.jpg?_nc_cat=102&_nc_ht=scontent-lga3-1.xx&oh=7ac722e5ab216abbc8b551435b7e03a4&oe=5CDE6180" onclick="onClick(this)" alt="Bóng và hình, tưởng là những hiện tượng vật thể không thể tách rời, nhưng nó sẽ không còn tồn tại khi vật thể ấy không đứng vào nơi có ánh sáng. Thân và đuôi, tưởng là những vật thể có sự liên kết chặt chẽ trong một thân thể, nhưng nó cũng không thể tồn tại khi vật thể ấy là con người nên không có đuôi. Keo và sơn, tưởng là sự gắn bó chặt chẽ, nhưng cũng có ngày tách rời bởi yếu tố thời gian. Chỉ có cái tâm là trường tồn. Thế nên, không cần sự thề thốt, không cần sự hạ quyết tâm chi, chỉ cần cái tâm là đủ!. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white ">
+        <quote><strong>"Bóng và hình, tưởng là những hiện tượng vật thể không thể tách rời, nhưng nó sẽ không còn tồn tại khi vật thể ấy không đứng vào nơi có ánh sáng. ....."</strong> - Đức Thầy Từ Minh Đạt, 5/2013</quote>
+            </div>
+    </div>
+    <div class="w3-content w3-padding-16" id="link3">
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/38292930_1023491691150501_3279805875274907648_o.jpg?_nc_cat=108&_nc_ht=scontent-lga3-1.xx&oh=b34f4975e6ffd43bf0cda99f0b662e24&oe=5D127B98" onclick="onClick(this)" alt="Khi bước chân vào một hệ thống có sẵn, một mạng lưới có sẵn, một tổ chức có sẵn, một quan hệ có sẵn, một ân oán có sẵn,… nói chung mọi oan nghiệt, duyên nghiệp, nhân quả,… đều đã có sẵn mà ta phải là người kế thừa; thì nên dựa vào tinh thần có được từ bản thân ta trở đi mà giải quyết sự việc. Đừng lấy cái ân oán cũ để cột vào mình dầu rằng bản thân ta đang đi vào, đang thừa hưởng, đang tiếp nối… những cái tồn đọng từ cái cũ. Đừng lấy cái oán của người thành oán của mình mà tiếp nối; đừng lấy cái nợ của người kể cả cái duyên của người thành chuỗi tiếp nối mà đẩy ta vào vòng cuốn hút cũ. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white">
+        <quote><strong>"Khi bước chân vào một hệ thống có sẵn, một mạng lưới có sẵn, một tổ chức có sẵn, một quan hệ có sẵn, một ân oán có sẵn,…"</strong> - Đức Thầy Từ Minh Đạt, 12/2011</quote>
+            </div>
+    </div>
+
+    <div class="w3-content w3-padding-16" id="link4">
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/36754142_994779970688340_4462496532649738240_o.jpg?_nc_cat=108&_nc_ht=scontent-lga3-1.xx&oh=a13b290191c450e1b325fda9368351e1&oe=5D0ED486" onclick="onClick(this)" alt="Sanh ra đời ở vị trí nào, dân tộc nào, thân phận nào, dầu không thích cũng phải làm tròn với vị trí đó. Đó là cách làm cho đời sống của mình không ngày càng bị sa lầm, lầm lỗi và thất bại. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white">
+        <quote><strong>"Chất rắn đánh vào chất rắn thì hai vật cũng đều nhận phản lực dội ngược. Nhưng chất rắn đánh vào không khí thì mọi thứ đều là không! Vì vậy, để hóa giải mọi áp lực thì phải biết biến thành không khí để mọi thứ đều hóa không! Tâm yên lại, dửng dưng không manh động"</strong> - Đức Thầy Từ Minh Đạt, 12/2012</quote>
+            </div>
+    </div>
+
+    <div class="w3-content w3-padding-16" id="link5">
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/29351715_930607123772292_7352461449674781104_o.jpg?_nc_cat=104&_nc_ht=scontent-lga3-1.xx&oh=5a4dbbd466c2d33abb95569ea9947663&oe=5D2392A7" onclick="onClick(this)" alt="Làm việc gì, nghĩ việc gì đều phải có cái giá của nó; kể cả làm việc tốt, nghĩ việc tốt; làm việc tầm thường, nghĩ việc tầm thường. Thậm chí làm việc và nghĩ việc rất là cá nhân và nhỏ bé như ăn, uống thì cũng phải có cái giá để trả. Cái giá đó tự bản thân người hành, người nghĩ phải trả. Không một ai, dầu thân thuộc, yêu thương cỡ nào cũng không thể trả giùm được.. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white">
+        <quote><strong>"Làm việc gì, nghĩ việc gì đều phải có cái giá của nó; kể cả làm việc tốt, nghĩ việc tốt; làm việc tầm thường, nghĩ việc tầm thường...."</strong> - Đức Thầy Từ Minh Đạt, 10/2011</quote>
+            </div>
+    </div>
+
+    <div class="w3-content w3-padding-16" id="link6">
+     <img class="w3-button" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/29027399_920343438131994_1361563413754413056_o.jpg?_nc_cat=101&_nc_ht=scontent-lga3-1.xx&oh=e4d0364ad0083fe26fc7e93d41a97cff&oe=5D0DF892" onclick="onClick(this)" alt="Giàu nghèo đều có phần số. Hãy truyền nhận thức nầy cho mọi người thấy rằng: “Cần biết cách sống trước khi có của cải vật chất”. Nếu có của cải, ta sẽ biết cách dùng của cải đúng đắn, nếu thế thời bắt phải đói nghèo thì ta sẽ biết cách sống hạnh phúc và vươn lên trong cảnh đói nghèo. By Đức Thầy Từ Minh Đạt. Photo: Phuong Nguyen"style="width:100%">
+    
+      <div class="w3-container w3-white">
+        <quote><strong>"Giàu nghèo đều có phần số”. Hãy truyền nhận thức nầy cho mọi người thấy rằng: “Cần biết cách sống trước khi có của cải vật chất”. Nếu có của cải, ta sẽ biết cách dùng của cải đúng đắn, nếu thế thời bắt phải đói nghèo thì ta sẽ biết cách sống hạnh phúc và vươn lên trong cảnh đói nghèo."</strong> - Đức Thầy Từ Minh Đạt, 5/2008</quote>
+            </div>
+    </div>
+
+    </div><hr>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+</div>
+
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src=" " class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-yellow-opacity">
+  <h1 style="color:black;opacity:1.0;"><strong>QUY NGUYÊN</strong></h1>
+  <h5 style="color:red;opacity:1.0;"><strong>TẠP CHÍ TRAO ĐỔI VÀ THÔNG TIN CỦA CÁC PHÁP HỮU VÔ VI QUY NGHIÊM</strong></h5>
+
+  <p style="color:black;opacity:1.0;"> <i class="fa fa-address-book fa-fw w3-margin-right w3-large w3-hover-opacity"></i>911 Aleah Ln., Tehachapi, CA 93561 </p>
+
+  <p style="color:black;opacity:1.0;"> <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-hover-opacity"></i>714-236-0282</p>
+  <p style="color:black;opacity:1.0;"><i class="fa fa-envelope-o fa-fw w3-margin-right w3-large w3-hover-opacity"></i>tapchiquynguyen@voviology.org </p>
+   <p class="w3-medium">Copyright by<a href="http://www.voviology.org/front/region_select.asp" target="_blank"> www.voviology.org</a></p>
+
+</footer>
+
+
+
+<script>
+
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+  function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+</script>
+
+</body>
+</html>
